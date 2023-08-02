@@ -6,7 +6,20 @@ Scroll2.js is a JavaScript library that allows you to easily add scroll animatio
 
 ## Getting Started
 
-To use Scroll2.js, simply include the following script in your HTML file:
+
+To use Scroll2.js, follow these steps:
+
+1. Download the Scroll2.js script from my GitHub repository by clicking [here](https://github.com/pazorrro/ScrollE2/main/scrollE2.js).
+2. Place the downloaded `scrollE2.js` file in your project directory.
+
+In your HTML file, include the following links:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script src="scrollE2.js"></script>
+```
+
+Now you're all set to start using Scroll2.js and add smooth scroll animations to your web pages!
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
