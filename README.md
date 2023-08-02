@@ -2,22 +2,25 @@
 
 Scroll2.js is a JavaScript library that allows you to easily add scroll animations to elements on your webpage. It leverages the popular animate.css library for smooth and eye-catching animations. This library is designed to be lightweight and customizable, giving you the flexibility to create engaging scroll animations with minimal effort.
 
+**Note: Scroll2.js accepts CSS selectors as keys, which can include class selectors (e.g., ".img"), element selectors (e.g., "p"), and ID selectors (e.g., "#example").**
+
 ## Getting Started
 
 To use Scroll2.js, simply include the following script in your HTML file:
 
 ```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <script src="https://raw.githubusercontent.com/pazorrro/ScrollE2/main/scrollE2.js"></script>
 ```
 
 ## Basic Usage
 
-The basic usage of Scroll2.js involves creating a dictionary that maps HTML element selectors to their corresponding animations. Here's an example:
+The basic usage of Scroll2.js involves creating a dictionary that maps CSS selectors to their corresponding animations. Here's an example:
 
 ```javascript
 // Example dictionary
 const dict = {
-  "img": "animate__fadeInRight",
+  ".img": "animate__fadeInRight",
   "p": "animate__fadeInUp",
 };
 
@@ -26,7 +29,7 @@ const scroll = new Scroll2(dict);
 scroll.init();
 ```
 
-In this example, all `img` elements on the page will have a fade-in animation from the right, and all `p` elements will have a fade-in animation from the bottom.
+In this example, all elements with the class "img" will have a fade-in animation from the right, and all "p" elements will have a fade-in animation from the bottom.
 
 ## Advanced Usage
 
@@ -35,7 +38,7 @@ Scroll2.js allows you to apply different animations to the same selector in sequ
 ```javascript
 // Advanced example with array of animations
 const dict = {
-  "img": ["animate__fadeInRight", "animate__fadeInLeft"],
+  ".img": ["animate__fadeInRight", "animate__fadeInLeft"],
 };
 
 // Create Scroll2 instance and initialize
@@ -43,7 +46,7 @@ const scroll = new Scroll2(dict);
 scroll.init();
 ```
 
-In this case, the `img` elements will alternate between a fade-in animation from the right and a fade-in animation from the left on each scroll event.
+In this case, elements with the class "img" will alternate between a fade-in animation from the right and a fade-in animation from the left on each scroll event.
 
 ## Customization with Setters
 
@@ -52,7 +55,7 @@ Scroll2.js provides convenient setters to customize the scroll animation behavio
 ```javascript
 // Example with custom settings
 const dict = {
-  "img": "animate__fadeInRight",
+  ".img": "animate__fadeInRight",
 };
 
 // Create Scroll2 instance with custom settings
@@ -64,13 +67,7 @@ const scroll = new Scroll2(dict)
 scroll.init();
 ```
 
-With these settings, the `img` elements will start animating when they are 200 pixels above the bottom of the page, the animation duration will be 1 second, and elements will remain visible after scrolling.
-
-Don't forget to include the animate.css library in your HTML to ensure that the animations work correctly:
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-```
+With these settings, elements with the class "img" will start animating when they are 200 pixels above the bottom of the page, the animation duration will be 1 second, and elements will remain visible after scrolling.
 
 ## Conclusion
 
