@@ -77,7 +77,7 @@ class Scroll2 {
     }
 
     generateUniqueId() {
-      return "element-" + Math.random().toString(36).substr(2, 9);
+      return "element-" + Math.random().toString(36).substring(2, 9);
     }
   
     createLoadEventListener(selector, animation) {
