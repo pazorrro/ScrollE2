@@ -19,13 +19,6 @@ In your HTML file, include the following links:
 <script src="scrollE2.js"></script>
 ```
 
-Now you're all set to start using Scroll2.js and add smooth scroll animations to your web pages!
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<script src="https://raw.githubusercontent.com/pazorrro/ScrollE2/main/scrollE2.js"></script>
-```
-
 ## Basic Usage
 
 The basic usage of Scroll2.js involves creating a dictionary that maps CSS selectors to their corresponding animations. Here's an example:
